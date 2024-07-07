@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 200vh;
+    /* background-color: rgb(18, 15, 15); */
+    background-color: #4793AF;
+    z-index: -2;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-image: url("coc.png");
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    background-position: center;
+    /* background-position: left top; */
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    position:static;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    opacity: .8;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 11px 15px;
+    /* border-bottom: 2px solid rgb(0, 0, 0); */
+    /* z-index: 3; */
+}
+.show{
+    display: block;
+}
+.remove{
+    display: none;
+}
+#nav i{
+    font-size: 1.5rem;
+    color: white;
+    justify-self: flex-end;
+    margin-right: 11px;
+    cursor: pointer;
+}
+/* i#menu{
+
+} */
+i#close{
+    display: none;
+}
+#nav div h2{
+    padding: 6px;
+    padding-top: 9px;
+    padding-right: 11px;
+    color: white;
+    margin-left: 11px;
+}
+#gameName{
+    display: flex;
+    flex-direction: row;
+}
+#nav div img{
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+}
+#nav div ul li{
+    text-align: center;
+    list-style: none;
+    /* padding: 11px; */
+}
+#nav div ul li a{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    /* background-color: red; */
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 11px;
+}
+#nav div ul li a:hover{
+    box-shadow: 1px 1px 3px white;
+    /* border-radius: 11px; */
+    background-color: rgb(52, 47, 47);
+    color: #FFF455;
+}
+#nav div ul li a:active{
+    color: white;
+}
+#nav div ul{
+    display: none;
+    border-radius: 11px;
+    margin-left:25px;
+    margin-top: 11px;
+    /* z-index: 3; */
+}
+#home{
+    width: 85vw;
+    z-index: 1;
+    background-color: #DC6B19;
+    opacity: .8;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background-image: url("barbarian.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 1px black;
+}
+#home p{
+    font-size: 1.2rem;
+    position: relative;
+    color: black;
+    /* z-index: 2; */
+    text-align: justify;
+    padding: 21px;
+}
+h1{
+    text-align: center;
+    width: 300px;
+    padding: 8px 33px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 21px auto;
+    background-color: #102C57;
+    color: white;
+}
+#struct{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+    position: relative;
+}
+#TroopsAndHeroes{
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative; 
+    margin: 25px auto;
+    z-index: 1;
+}
+#tandh{
+    border-radius: 5px;
+    width: 85vw;
+    padding: 11px;
+    display: flex;
+    flex-direction: row;
+    background-color: #973131;
+    opacity: .8;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    position: relative;
+}
+#tandh ul {
+    margin: 21px;
+}
+.spellBox{
+    border-radius: 5px;
+    padding: 11px;
+    display: flex;
+    flex-direction: row;
+    background-color: #8DECB4;
+    opacity: .8;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000000; 
+    width: 85vw;
+    margin-bottom: 39px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.1rem;
+}
+.spellBox ul{
+    /* z-index: 3; */
+    margin: 21px;
+}
+#spells{
+    margin: 25px auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    font-size: 1.1rem;
+}
+#footer{
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    padding: 3px 5px;
+}
