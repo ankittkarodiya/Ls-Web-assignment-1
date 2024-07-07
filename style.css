@@ -155,12 +155,13 @@ h1{
     z-index: 1;
 }
 #tandh{
-    overflow: hidden;
+    overflow:scroll;
     border-radius: 5px;
     width: 85vw;
     padding: 11px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #973131;
     opacity: .8;
     justify-content: center;
