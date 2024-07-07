@@ -143,7 +143,12 @@
         <script>
             let liArr = document.querySelectorAll("ol li");
             let btn = document.querySelector("button");
-            // let newEl = document.createElement("h3");
+            let container = document.querySelector("#container");
+            let newEl = document.createElement("h3");
+            let score = 0;
+
+            container.appendChild(newEl);
+
             // let olArr = document.querySelectorAll("ol");
 
             // olArr.forEach((ol) => {
@@ -158,6 +163,7 @@
                         li.style.backgroundColor = "green";
                         // newEl.innerText = "Correct Answer";
                         li.style.backgroundColor = "none";
+                        score++;
                     }
                     else{
                         li.style.color = "white";
@@ -165,8 +171,9 @@
                         // newEl.innerText = "Incorrect Answer";  
                         li.style.backgroundColor = "none";
                     }
+                    newEl.innerText = `Score: ${score}`;
                 });
-
+                
             });
 
             btn.addEventListener("click", () => {
@@ -174,7 +181,9 @@
                     li.style.backgroundColor = "";
                     li.style.color = "#FFEEA9";
                 });
+                newEl.innerText = "";
             });
+
         </script>
 </body>
 </html>
