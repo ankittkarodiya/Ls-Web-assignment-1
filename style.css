@@ -26,6 +26,7 @@ body::before{
 #nav{
     position:static;
     /* position: fixed; */
+    width: 100vw;
     top: 0;
     right: 0;
     left: 0;
