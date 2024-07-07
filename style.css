@@ -155,6 +155,7 @@ h1{
     z-index: 1;
 }
 #tandh{
+    overflow: hidden;
     border-radius: 5px;
     width: 85vw;
     padding: 11px;
