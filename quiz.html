@@ -143,11 +143,12 @@
         <script>
             let liArr = document.querySelectorAll("ol li");
             let btn = document.querySelector("button");
-            let container = document.querySelector("#container");
-            let newEl = document.createElement("h3");
-            let score = 0;
+            // let container = document.querySelector("#container");
+            // let newEl = document.createElement("h3");
+            // let score = 0;
 
-            container.appendChild(newEl);
+            // container.after(newEl);
+            // newEl.style.color = "white";
 
             // let olArr = document.querySelectorAll("ol");
 
@@ -163,7 +164,7 @@
                         li.style.backgroundColor = "green";
                         // newEl.innerText = "Correct Answer";
                         li.style.backgroundColor = "none";
-                        score++;
+                        // score++;
                     }
                     else{
                         li.style.color = "white";
@@ -171,7 +172,7 @@
                         // newEl.innerText = "Incorrect Answer";  
                         li.style.backgroundColor = "none";
                     }
-                    newEl.innerText = `Score: ${score}`;
+                    // newEl.innerText = `Score: ${score}`;
                 });
                 
             });
@@ -181,8 +182,8 @@
                     li.style.backgroundColor = "";
                     li.style.color = "#FFEEA9";
                 });
-                score = 0;
-                newEl.innerText = "";
+                // score = 0;
+                // newEl.innerText = "";
             });
 
         </script>
